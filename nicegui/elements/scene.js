@@ -4,6 +4,11 @@ import { CSS3DRenderer, CSS3DObject } from "CSS3DRenderer";
 import { DragControls } from "DragControls";
 import { GLTFLoader } from "GLTFLoader";
 import { OrbitControls } from "OrbitControls";
+import { Line2 } from "Line2";
+import { LineMaterial } from "LineMaterial";
+import { LineSegmentsGeometry } from "LineSegmentsGeometry";
+import { LineGeometry } from "LineGeometry";
+import { LineSegments2 } from "LineSegments2";
 import { STLLoader } from "STLLoader";
 import "tween";
 

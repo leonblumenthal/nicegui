@@ -149,6 +149,11 @@
       "package/examples/jsm/loaders/STLLoader(\\.min)?\\.js",
       "package/examples/jsm/loaders/GLTFLoader(\\.min)?\\.js",
       "package/examples/jsm/libs/tween\\.module(\\.min)?\\.js",
+      "package/examples/jsm/lines/Line2.js(\\.min)?\\.js",
+      "package/examples/jsm/lines/LineMaterial.js(\\.min)?\\.js",
+      "package/examples/jsm/lines/LineSegmentsGeometry.js(\\.min)?\\.js",
+      "package/examples/jsm/lines/LineGeometry.js(\\.min)?\\.js",
+      "package/examples/jsm/lines/LineSegments2.js(\\.min)?\\.js",
       "package/examples/jsm/utils/BufferGeometryUtils(\\.min)?\\.js"
     ],
     "rename": {
