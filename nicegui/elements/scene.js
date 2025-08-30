@@ -120,6 +120,7 @@ export default {
     }
     this.renderer.setClearColor(this.background_color);
     this.renderer.setSize(this.width, this.height);
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     this.text_renderer = new CSS2DRenderer({
       element: this.$el.children[1],
@@ -178,13 +179,13 @@ export default {
     this.drag_controls.addEventListener("dragend", handleDrag);
 
     const render = () => {
-      requestAnimationFrame(() => setTimeout(() => render(), 1000 / 20));
       this.camera_tween?.update();
       this.renderer.render(this.scene, this.camera);
       this.text_renderer.render(this.scene, this.camera);
       this.text3d_renderer.render(this.scene, this.camera);
+      requestAnimationFrame(render);
     };
-    render();
+    requestAnimationFrame(render)
 
     const raycaster = new THREE.Raycaster();
     const click_handler = (mouseEvent) => {
